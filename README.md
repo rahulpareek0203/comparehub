@@ -16,7 +16,7 @@ The project focuses on **clarity, usability, and real-world e-commerce workflows
 - Design prioritises visual hierarchy, spacing, and readability  
 
 📸 **Product Listing**
-![Home](screenshots/homePage.png)
+![Home](screenshots/HomePage.png)
 
 ---
 
@@ -30,7 +30,7 @@ The project focuses on **clarity, usability, and real-world e-commerce workflows
 - Designed to support faster, more confident purchase decisions  
 
 📸 **Product Details + AI Summary**
-![Product](screenshots/productPage.png)
+![Product](screenshots/ProductPage.png)
 
 ---
 
