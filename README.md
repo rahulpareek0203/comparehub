@@ -1,73 +1,122 @@
-# React + TypeScript + Vite
+# CompareHub 🛒  
+**A design-driven, AI-enhanced product comparison & shopping web application**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CompareHub is a modern web application that demonstrates how **design intent can be translated into precise, structured, and maintainable frontend solutions**, while also integrating **AI/LLM capabilities** to enhance user understanding and decision-making.
 
-Currently, two official plugins are available:
+The project focuses on **clarity, usability, and real-world e-commerce workflows**, combining strong UI/UX principles with modern frontend engineering and applied AI features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏠 Product Discovery & Browsing
+- Clean, responsive product listing with card-based layout  
+- Category and brand-based filtering  
+- Clear calls to action (View, Compare, Save)  
+- Design prioritises visual hierarchy, spacing, and readability  
 
-## Expanding the ESLint configuration
+📸 **Product Listing**
+![Home](screenshots/homePage.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔍 Product Details with AI Summary
+- Detailed product view with pricing, ratings, and reviews  
+- Add to cart & save to favourites  
+- **AI-powered product summary panel** using LLMs:
+  - Auto-generated highlights
+  - Pros & cons
+  - Best-use recommendations  
+- Designed to support faster, more confident purchase decisions  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📸 **Product Details + AI Summary**
+![Product](screenshots/productPage.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🤖 AI Capabilities (LLM Integration)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The application integrates **LLM-based AI features** to enhance user experience:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **AI Product Summary Generation**  
+  Automatically generates concise, structured summaries from product metadata and reviews.
+
+- **AI Chat Interface (Planned / Demo-ready)**  
+  Designed to support conversational product queries and assistance.
+
+- **Document / Content Categorisation**  
+  AI-driven categorisation logic prepared for organising products, reviews, and content efficiently.
+
+> These features showcase practical AI integration within a frontend-focused web application, emphasising usability and real-world value rather than experimentation.
+
+---
+
+### ❤️ Favourites
+- Save and manage favourite products  
+- Persistent favourites view  
+- Quick access to shortlisted items  
+
+📸 **Favourites**
+![Favourites](screenshots/Favorites.png)
+
+---
+
+### 🛒 Shopping Cart & Order Summary
+- Add, remove, and update item quantities  
+- Real-time price calculations  
+- Clear order summary (subtotal, shipping, total)  
+- UX optimised to reduce friction during checkout  
+
+📸 **Cart**
+![Cart](screenshots/CartPage.png)
+
+---
+
+### 👤 User Profile
+- Editable personal information (name, email, phone, address)  
+- Clean, structured form layout  
+- Prepared for future checkout and account integration  
+
+📸 **User Profile**
+![Profile](screenshots/UserPage.png)
+
+---
+
+### 🛠️ Admin Panel (Demo)
+- Admin dashboard for operational overview  
+- Order management with status tracking  
+- Revenue and order statistics  
+- Table-based UI focused on clarity and maintainability  
+
+📸 **Admin Panel**
+![Admin](screenshots/AdminPage.png)
+
+---
+
+## 🎨 Design & UX Philosophy
+
+This project was built with a strong focus on:
+- Translating **design concepts into clean technical implementation**
+- Consistent spacing, typography, and layout structure  
+- User-centric flows inspired by real-world e-commerce platforms  
+- Maintainable component structure and predictable UI behaviour  
+
+My background in **content creation** influenced the emphasis on clarity, storytelling, and customer-oriented layouts across the application.
+
+---
+
+## 🧩 Tech Stack
+
+- **Frontend:** React, TypeScript, Vite  
+- **Styling:** Modern CSS with design-first approach  
+- **State & Logic:** Component-driven architecture  
+- **AI / LLM:** Summary generation, chat-ready interfaces, content categorisation  
+- **Data:** Dummy/static data (frontend-focused demo)
+
+---
+
+## 🚀 Local Setup
+
+```bash
+npm install
+npm run dev
